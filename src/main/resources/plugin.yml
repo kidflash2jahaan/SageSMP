@@ -1,0 +1,6 @@
+name: SageSMP
+version: 1.0.0
+main: com.systemerr.sagesmp.Main
+description: A minecraft server created by Jahaan Pardhanani for Sage Hill School.
+author: Jahaan Pardhanani
+api-version: '1.21.4'
