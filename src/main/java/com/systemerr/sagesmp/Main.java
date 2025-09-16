@@ -6,12 +6,15 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import com.systemerr.sagesmp.chatfilter.ChatListener;
+
 import net.kyori.adventure.text.Component;
 
 public class Main extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         Bukkit.getPluginManager().registerEvents(this, this);
+        Bukkit.getPluginManager().registerEvents(new ChatListener(), this);
     }
 
     @EventHandler
